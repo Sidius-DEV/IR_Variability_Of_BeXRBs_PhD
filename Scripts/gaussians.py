@@ -29,7 +29,7 @@ guess = [6557.5, 2.0, 8.0, 6561.0, -0.4, 3.0, 6565.0, 1.1, 2.0]
 
 
 popt, pcov = curve_fit(func, x, y, p0=guess)
-print popt
+print(popt)
 fit = func(x, *popt)
 
 plt.xlabel('Wavelength (Angstroms)')
